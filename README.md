@@ -3,8 +3,8 @@ L’idée de cette mise en situation est de valider ta maîtrise de Python et Gi
 Je te propose donc de faire un très rapide programme qui tu hébergeras sur Heroku (https://www.heroku.com/; c’est gratuit).
 
 L’objectif est de programmer un petit programme Python qui va scrapper le site https://coinmarketcap.com/ et qui va retourner une liste au format JSON constituée des crypto-monnaies dont le prix a le plus évolué dans les dernières 24h ou 7j. 
-En hébergeant sur Heroku tu auras une url du genre **votreapp**.herokuapp.com
-L’idée est que quand on fait une requête GET sur https://**votreapp**.herokuapp.com/?tf=1 on a le résultat des 10 coins qui on le plus monté & les 10 coins qui ont le plus baissé (soit 20 résultats) dans les 24 dernières heures et la même chose pour https://**votreapp**.herokuapp.com/?tf=7 mais avec les 7 derniers jours.
+En hébergeant sur Heroku tu auras une url du genre api-scrap-pw.herokuapp.com
+L’idée est que quand on fait une requête GET sur https://api-scrap-pw.herokuapp.com/?tf=1 on a le résultat des 10 coins qui on le plus monté & les 10 coins qui ont le plus baissé (soit 20 résultats) dans les 24 dernières heures et la même chose pour https://api-scrap-pw.herokuapp.com/?tf=7 mais avec les 7 derniers jours.
 Le 1 étant pour 24h et le 7 pour 7j.
 Si le paramètre “tf” est absent, renvoyez une erreur 400
 Si le paramètre “tf” prend une autre valeur que 1 ou 7, vous pouvez renvoyer une erreur 418
