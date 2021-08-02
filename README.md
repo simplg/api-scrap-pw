@@ -1,4 +1,4 @@
-# Mise en situation #1 - API & Scrapping
+# Mise en situation #1 - API & Scrapping [![Build Status](https://travis-ci.com/simplg/api-scrap-pw.svg?branch=main)](https://travis-ci.com/simplg/api-scrap-pw)
 L’idée de cette mise en situation est de valider ta maîtrise de Python et Git.
 Je te propose donc de faire un très rapide programme qui tu hébergeras sur Heroku (https://www.heroku.com/; c’est gratuit).
 
@@ -48,3 +48,6 @@ flask run
 You have one api endpoint which have a mandated argument tf that can take only one of the two values: "1" or "7".
 /?tf=1 for the last 24 hours result and /?tf=7 for the last 7 days result.
 The result is a json object with two lists, one which is the first 10 value for percentage price changes and the other is the last 10.
+
+# Docker
+The app can also be built into a container.
