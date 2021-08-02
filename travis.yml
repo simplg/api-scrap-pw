@@ -1,0 +1,17 @@
+os:
+  - linux
+
+dist: focal
+
+language: python
+python:
+  - "3.9"
+
+services:
+  - docker 
+
+script:
+  - python -m pytest -v
+  - cp .env.exemple .env
+  - docker-compose up -d
+  - docker-compose ps
