@@ -12,6 +12,6 @@ services:
 
 script:
   - python -m pytest -v
-  - cp .env.exemple .env
+  - cp .env.example .env
   - docker-compose up -d
   - docker-compose ps
