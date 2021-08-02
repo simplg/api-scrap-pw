@@ -25,6 +25,7 @@ cd api-scrap-pw
 python -m venv venv
 ```
 3. Then you have to activate it:
+
 **For Linux**:
 ```sh
 source venv/bin/activate
